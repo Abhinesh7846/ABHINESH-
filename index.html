@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinesh - Creative Video Editor & Post-Production Specialist</title>
+    <meta name="description" content="Abhinesh's portfolio: A passionate video editor specializing in motion graphics, Premiere Pro, DaVinci Resolve, audio editing, and Photoshop. Offering services for YouTube, Reels, Shorts, thumbnails, and post-production. Hire me for your next project!">
+    <meta name="keywords" content="video editor, motion graphics, Premiere Pro, DaVinci Resolve, audio editing, Photoshop, freelance video editor, YouTube editing, post-production, thumbnail design, video production, remote video editor, B.Tech student, content creator">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom Tailwind Configuration - Defined via script below */
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-green': '#4CAF50', /* Vibrant Green */
+                        'secondary-green': '#81C784', /* Lighter Green for accents/secondary text */
+                        'bg-dark-main': '#121212', /* Near Black for main backgrounds */
+                        'bg-dark-light': '#1A1A1A', /* Slightly lighter dark for cards/sections */
+                        'bg-dark-form': '#282828', /* Even lighter dark for form backgrounds */
+                        'text-light-main': '#E0E0E0', /* Off-white for main text on dark backgrounds */
+                        'text-accent': '#A5D6A7', /* Light green for accent text */
+                        'border-dark': '#333333', /* Dark gray for borders and separators */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 1s ease-out forwards',
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-bg-dark-main text-text-light-main antialiased">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full bg-bg-dark-light bg-opacity-95 shadow-sm py-4 z-50 backdrop-blur-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <!-- Logo/Initials -->
+            <a href="#home" class="text-3xl font-bold text-primary-green hover:text-secondary-green transition duration-300">A</a>
+
+            <!-- Navigation Links -->
+            <ul class="flex space-x-8">
+                <li><a href="#home" class="text-lg font-medium text-text-light-main hover:text-primary-green hover:underline underline-offset-4 decoration-primary-green transition duration-300">Home</a></li>
+                <li><a href="#about" class="text-lg font-medium text-text-light-main hover:text-primary-green hover:underline underline-offset-4 decoration-primary-green transition duration-300">About</a></li>
+                <li><a href="#portfolio" class="text-lg font-medium text-text-light-main hover:text-primary-green hover:underline underline-offset-4 decoration-primary-green transition duration-300">Portfolio</a></li>
+                <li><a href="#services" class="text-lg font-medium text-text-light-main hover:text-primary-green hover:underline underline-offset-4 decoration-primary-green transition duration-300">Services</a></li>
+                <li><a href="#contact" class="text-lg font-medium text-text-light-main hover:text-primary-green hover:underline underline-offset-4 decoration-primary-green transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="flex flex-col items-center justify-center min-h-screen text-center pt-24 bg-gradient-to-br from-bg-dark-main to-bg-dark-light">
+        <div class="container mx-auto px-6 py-12 animate-fade-in-up">
+            <!-- Profile Photo Placeholder -->
+            <img src="https://placehold.co/200x200/CBD5E1/4A5568?text=Abhinesh" alt="Abhinesh's Profile Photo" class="rounded-full w-48 h-48 mx-auto mb-8 shadow-xl border-4 border-bg-dark-light">
+
+            <!-- Headline -->
+            <h1 class="text-5xl md:text-6xl font-extrabold text-text-light-main leading-tight mb-6">
+                🎬 “Hi, I’m Abhinesh – I bring stories to life through powerful edits.”
+            </h1>
+
+            <!-- Short Intro -->
+            <p class="text-xl text-text-accent max-w-3xl mx-auto mb-10">
+                A passionate video editor with a year of hands-on experience, I help creators and businesses transform their raw footage into engaging visual stories.
+            </p>
+
+            <!-- Call-to-action Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#contact" class="inline-block bg-primary-green text-text-light-main font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-green-700 transition duration-300 transform hover:scale-105">
+                    Hire Me
+                </a>
+                <a href="#portfolio" class="inline-block bg-bg-dark-light text-primary-green border-2 border-primary-green font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-primary-green hover:text-text-light-main transition duration-300 transform hover:scale-105">
+                    View My Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-bg-dark-light">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <!-- Text Content -->
+            <div class="md:w-1/2 animate-fade-in-up" style="animation-delay: 0.2s;">
+                <h2 class="text-4xl font-bold text-text-light-main mb-6">About Me</h2>
+                <p class="text-lg text-text-accent leading-relaxed mb-6">
+                    I’m Abhinesh, a B.Tech 2nd-year student and creative editor with 1 year of hands-on experience in video editing. I actively work on YouTube channels and freelance projects, constantly honing my craft. I help creators and businesses enhance their visual content through motion graphics, sound design, and post-production magic, ensuring their message stands out.
+                </p>
+                <h3 class="text-2xl font-semibold text-text-light-main mb-4">My Toolkit:</h3>
+                <ul class="grid grid-cols-2 gap-4 text-lg text-text-accent">
+                    <li class="flex items-center"><span class="mr-2 text-primary-green">✅</span> Adobe Premiere Pro</li>
+                    <li class="flex items-center"><span class="mr-2 text-primary-green">✅</span> DaVinci Resolve</li>
+                    <li class="flex items-center"><span class="mr-2 text-primary-green">✅</span> Adobe Photoshop</li>
+                    <li class="flex items-center"><span class="mr-2 text-primary-green">✅</span> Advanced Audio Editing</li>
+                </ul>
+            </div>
+
+            <!-- Image Placeholder -->
+            <div class="md:w-1/2 flex justify-center animate-fade-in-up" style="animation-delay: 0.4s;">
+                <img src="https://placehold.co/400x400/D1D5DB/4B5563?text=Casual+Photo" alt="Abhinesh Casual Photo" class="rounded-lg shadow-xl w-full max-w-sm md:max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-bg-dark-main">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-text-light-main text-center mb-12 animate-fade-in-up">My Work</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-bg-dark-light rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="relative w-full aspect-video">
+                        <!-- Example YouTube Embed -->
+                        <iframe
+                            class="absolute top-0 left-0 w-full h-full rounded-t-lg"
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" <!-- Replace with actual YouTube video embed URL -->
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-text-light-main mb-2">Dynamic Intro Sequence</h3>
+                        <p class="text-text-accent mb-2"><strong>Tools Used:</strong> Premiere Pro, After Effects (Motion Graphics)</p>
+                        <p class="text-text-accent mb-4"><strong>Role:</strong> Full Edit, Motion Graphics Design</p>
+                        <p class="text-gray-400">A high-energy intro designed for a tech review channel, focusing on impactful visuals and quick cuts to grab attention.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="bg-bg-dark-light rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="relative w-full aspect-video">
+                        <iframe
+                            class="absolute top-0 left-0 w-full h-full rounded-t-lg"
+                            src="https://www.youtube.com/embed/L_jWHFFi5Cw" <!-- Replace with actual YouTube video embed URL -->
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-text-light-main mb-2">Travel Vlog Highlight Reel</h3>
+                        <p class="text-text-accent mb-2"><strong>Tools Used:</strong> DaVinci Resolve, Audacity (Audio Cleanup)</p>
+                        <p class="text-text-accent mb-4"><strong>Role:</strong> Full Edit, Audio Cleanup, Color Grading</p>
+                        <p class="text-gray-400">Captured the essence of a travel adventure with vibrant color grading and seamless transitions, complemented by professional audio cleanup.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="bg-bg-dark-light rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="relative w-full aspect-video">
+                        <iframe
+                            class="absolute top-0 left-0 w-full h-full rounded-t-lg"
+                            src="https://www.youtube.com/embed/pEwA4Q92k3I" <!-- Replace with actual YouTube video embed URL -->
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-text-light-main mb-2">Podcast Intro & Outro</h3>
+                        <p class="text-text-accent mb-2"><strong>Tools Used:</strong> Premiere Pro, Adobe Audition</p>
+                        <p class="text-text-accent mb-4"><strong>Role:</strong> Audio Post-Production, Simple Animation</p>
+                        <p class="text-gray-400">Crafted clean audio intros and outros for a podcast, ensuring clear voiceovers and background music, with subtle visual cues.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 (Example Thumbnail Design) -->
+                <div class="bg-bg-dark-light rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-fade-in-up" style="animation-delay: 0.8s;">
+                    <img src="https://placehold.co/600x337/ADD8E6/000000?text=Engaging+Thumbnail" alt="Thumbnail Design Example" class="w-full h-auto object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-text-light-main mb-2">YouTube Thumbnail Pack</h3>
+                        <p class="text-text-accent mb-2"><strong>Tools Used:</strong> Adobe Photoshop</p>
+                        <p class="text-text-accent mb-4"><strong>Role:</strong> Thumbnail Design</p>
+                        <p class="text-gray-400">Designed a series of eye-catching thumbnails to boost click-through rates for a gaming channel, focusing on strong imagery and bold text.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-bg-dark-light">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-text-light-main text-center mb-12 animate-fade-in-up">What I Offer</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1: Video Editing -->
+                <div class="bg-bg-dark-main rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition duration-300 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <span class="text-5xl mb-4 block">🎞️</span>
+                    <h3 class="text-2xl font-semibold text-text-light-main mb-3">Video Editing</h3>
+                    <p class="text-text-accent">Professional editing for YouTube videos, Instagram Reels, Shorts, and more, ensuring captivating storytelling.</p>
+                </div>
+
+                <!-- Service Card 2: Audio Editing -->
+                <div class="bg-bg-dark-main rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition duration-300 animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <span class="text-5xl mb-4 block">🔊</span>
+                    <h3 class="text-2xl font-semibold text-text-light-main mb-3">Audio Editing</h3>
+                    <p class="text-text-accent">Clean, clear, and professional audio post-production, including noise reduction, mixing, and mastering.</p>
+                </div>
+
+                <!-- Service Card 3: Thumbnail Creation -->
+                <div class="bg-bg-dark-main rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition duration-300 animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <span class="text-5xl mb-4 block">🖼️</span>
+                    <h3 class="text-2xl font-semibold text-text-light-main mb-3">Thumbnail Creation</h3>
+                    <p class="text-text-accent">Eye-catching and click-optimized thumbnail designs that make your content stand out.</p>
+                </div>
+
+                <!-- Service Card 4: Motion Graphics -->
+                <div class="bg-bg-dark-main rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition duration-300 animate-fade-in-up" style="animation-delay: 0.8s;">
+                    <span class="text-5xl mb-4 block">✨</span>
+                    <h3 class="text-2xl font-semibold text-text-light-main mb-3">Motion Graphics</h3>
+                    <p class="text-text-accent">Engaging animated titles, lower thirds, intros, and outros to elevate your video's production value.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-bg-dark-main">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-text-light-main text-center mb-12 animate-fade-in-up">Get in Touch</h2>
+
+            <div class="max-w-xl mx-auto bg-bg-dark-light rounded-lg shadow-xl p-8 animate-fade-in-up" style="animation-delay: 0.2s;">
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-lg font-medium text-text-light-main mb-2">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-border-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-green bg-bg-dark-form text-text-light-main transition duration-200">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg font-medium text-text-light-main mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-border-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-green bg-bg-dark-form text-text-light-main transition duration-200">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-lg font-medium text-text-light-main mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" required class="w-full px-4 py-3 border border-border-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-green bg-bg-dark-form text-text-light-main transition duration-200"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary-green text-text-light-main font-semibold py-3 rounded-full shadow-lg hover:bg-green-700 transition duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+
+                <div class="mt-10 text-center">
+                    <p class="text-xl font-semibold text-text-light-main mb-4">Connect with me:</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="mailto:abhinesh7846@gmail.com" class="text-text-accent hover:text-primary-green transition duration-300 text-lg flex items-center group">
+                            <span class="mr-2 text-3xl group-hover:scale-110 transform transition duration-300">📧</span> abhinesh7846@gmail.com
+                        </a>
+                        <a href="https://linkedin.com/in/abhinesh" target="_blank" rel="noopener noreferrer" class="text-text-accent hover:text-primary-green transition duration-300 text-lg flex items-center group">
+                            <span class="mr-2 text-3xl group-hover:scale-110 transform transition duration-300">🔗</span> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bg-dark-light py-8 text-center text-text-light-main">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-4">
+                <a href="mailto:abhinesh7846@gmail.com" class="text-text-light-main hover:text-primary-green transition duration-300 flex items-center">
+                    <span class="mr-2">📧</span> abhinesh7846@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/abhinesh" target="_blank" rel="noopener noreferrer" class="text-text-light-main hover:text-primary-green transition duration-300 flex items-center">
+                    <span class="mr-2">🔗</span> LinkedIn
+                </a>
+            </div>
+            <p class="text-sm">&copy; 2024 Abhinesh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Animations and Smooth Scrolling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        // Offset for fixed header
+                        const headerOffset = document.querySelector('nav').offsetHeight;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in-up');
+                        entry.target.classList.remove('opacity-0'); // Ensure opacity is not zero initially
+                        observer.unobserve(entry.target); // Stop observing once animated
+                    }
+                });
+            }, observerOptions);
+
+            // Add opacity-0 to elements that will animate to hide them before animation
+            document.querySelectorAll('section, .portfolio-item, .service-card, form, img:not(.rounded-full)').forEach(el => {
+                 // Select specific elements for animation based on the classes used in HTML
+                if (el.id === 'home' || el.id === 'about' || el.id === 'portfolio' || el.id === 'services' || el.id === 'contact') {
+                    // Apply opacity-0 to sections and direct children that are supposed to animate
+                    el.classList.add('opacity-0'); // Hide initially
+                    observer.observe(el);
+                } else if (el.closest('#portfolio') || el.closest('#services') || el.closest('#contact')) {
+                    // For elements inside these sections, apply animation
+                    el.classList.add('opacity-0');
+                    observer.observe(el);
+                }
+            });
+
+
+            // Contact Form Submission (Frontend only, no backend)
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault(); // Prevent default form submission
+
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+
+                    // Basic validation
+                    if (!name || !email || !message) {
+                        // Replace alert with a custom message box UI in a real app
+                        console.error('Please fill in all fields.');
+                        alert('Please fill in all fields.');
+                        return;
+                    }
+
+                    // In a real application, you would send this data to a backend server.
+                    // For example, using fetch API:
+                    /*
+                    fetch('/api/contact', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ name, email, message }),
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Success:', data);
+                        alert('Message sent successfully!'); // Replace with custom success UI
+                        contactForm.reset();
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                        alert('Failed to send message.'); // Replace with custom error UI
+                    });
+                    */
+
+                    // For now, just log to console and simulate success
+                    console.log('Form Submitted:', { name, email, message });
+                    alert('Thank you for your message, Abhinesh will get back to you soon!'); // Replace with a custom success UI
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
